@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon1 {
+    width: 80px;
+    height: 67px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon2 {
+    width: 80px;
+    height: 76px;
+    background-position: -95px -5px;
+}
+
+.sprite-icon3 {
+    width: 80px;
+    height: 66px;
+    background-position: -185px -5px;
+}
+
+.sprite-icon4 {
+    width: 80px;
+    height: 58px;
+    background-position: -275px -5px;
+}
+
+.sprite-icon_error {
+    width: 48px;
+    height: 48px;
+    background-position: -365px -5px;
+}
+
+.sprite-login {
+    width: 28px;
+    height: 29px;
+    background-position: -423px -5px;
+}
+
+.sprite-login_h {
+    width: 28px;
+    height: 29px;
+    background-position: -461px -5px;
+}
+
+.sprite-search {
+    width: 15px;
+    height: 15px;
+    background-position: -499px -5px;
+}

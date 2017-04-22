@@ -13,15 +13,24 @@
   </head>
   <body>
     <header class="main-header">
-      <figure class="header-logo">
-        <img src="img/hlogo.png" width="206" height="81" alt="bond">
-      </figure>
+      <div class="header-logo container">
+        <a class="header-logo-box" href="#">
+          <img src="img/hlogo.png" width="206" height="81" alt="bond">
+        </a>
+      </div>
       <div class="header-overhead">
         <div class="header-search">
-
+          <input type="text" name="search" value="">
+          <button class="header-search-btn" type="button" name="button">search</button>
         </div>
         <div class="header-login">
-
+          <button class="header-login-btn" type="button" name="button">
+            <span class="login-btn-icon"></span>log in</button>
+        </div>
+        <div class="header-menu-toggle">
+          <button type="button" name="button">
+            <span>menu</span>
+          </button>
         </div>
         <nav class="header-nav">
           <ul>
@@ -34,7 +43,6 @@
           </ul>
         </nav>
       </div>
-
     </header>
     <main>
       <section class="main-slider">
@@ -50,134 +58,148 @@
 
       </section>
       <section class="main-production">
-        <div class="production-services">
-          <div class="service">
-            <div class="service-pack">
+        <div class="production-services clearfix">
+          <div class="production-service">
+            <div class="service-pack service-red">
               <h2>first-time freshmen</h2>
             </div>
           </div>
-          <div class="service">
-            <div class="service-pack">
+          <div class="production-service">
+            <div class="service-pack service-blue">
               <h2>graduate students</h2>
             </div>
           </div>
-          <div class="service">
-            <div class="service-pack">
+          <div class="production-service">
+            <div class="service-pack service-crimson">
               <h2>summer transients</h2>
             </div>
           </div>
-          <div class="service">
-            <div class="service-pack">
+          <div class="production-service">
+            <div class="service-pack service-green">
               <h2>admissions research</h2>
             </div>
           </div>
         </div>
         <div class="production-advantages">
-          <div class="advantage">
+          <div class="production-advantage">
             <span class="advantage-icon inclusion-icon"></span>
             <h3>inclusion</h3>
             <p>Present vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem.</p>
           </div>
-          <div class="advantage">
+          <div class="production-advantage">
             <span class="advantage-icon innovation-icon"></span>
             <h3>innovation</h3>
             <p>Present vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem.</p>
           </div>
-          <div class="advantage">
+          <div class="production-advantage">
             <span class="advantage-icon impact-icon"></span>
             <h3>impact</h3>
             <p>Present vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem.</p>
           </div>
-          <div class="advantage">
+          <div class="production-advantage">
             <span class="advantage-icon events-icon"></span>
             <h3>events</h3>
             <p>Present vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem.</p>
           </div>
         </div>
       </section>
-      <section class="main-result">
+      <section class="main-result container">
         <article class="result-content">
           <h3>FOUNDED IN 1956, BOND HAS 2400 FACULTY MEMBERS</h3>
           <p>Present vestibulum aenean nonummy hendrerit mauris. Cum sociis natoque penatibus et magnis dis parturient montes ascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci ac sem.</p>
           <p><span class="content-keywords">
-            <a href="#">SCHOOL OF ARCHITECTURE</a> /
-            <a href="#">SCHOOL OF FORESTRY & ENVIRONMENTAL STUDIES</a> /
-            <a href="">DIVINITY SCHOOL</a> /
-            <a href="">SCHOOL OF DRAMA</a> /
-            <a href="">EMPLOYMENT LAW</a> /
-            <a href="">SCHOOL OF ART</a> /
-            <a href="">LAW SCHOOL</a> /
-            <a href="">SCHOOL OF MANAGEMENT</a> /
-            <a href="">SCHOOL OF MEDICINE</a> /
-            <a href="">SCHOOL OF MUSIC</a> /
-            <a href="">SCHOOL OF NURSING</a> /
+            <a href="#">SCHOOL OF ARCHITECTURE / </a>
+            <a href="#">SCHOOL OF FORESTRY & ENVIRONMENTAL STUDIES / </a>
+            <a href="">DIVINITY SCHOOL / </a>
+            <a href="">SCHOOL OF DRAMA / </a>
+            <a href="">EMPLOYMENT LAW / </a>
+            <a href="">SCHOOL OF ART / </a>
+            <a href="">LAW SCHOOL / </a>
+            <a href="">SCHOOL OF MANAGEMENT / </a>
+            <a href="">SCHOOL OF MEDICINE / </a>
+            <a href="">SCHOOL OF MUSIC / </a>
+            <a href="">SCHOOL OF NURSING / </a>
           </span></p>
         </article>
         <div class="result-slider">
-          <div class="result-slide">
-            <img src="img/carousel-1.jpg" width="350" height="430" alt="ANTON COX">
-            <div class="slide-pack">
-              <h4>ANTON COX</h4>
-              <p>(Attorney)</p>
-              <p><span>15 YEARS
-              OF PRACTICE</span></p>
-              <a class="slide-pack-icon pack-icon-in"href=""></a>
-              <a class="slide-pack-icon pack-icon-post"href=""></a>
+          <div class="result-slider-box">
+            <div class="result-slide">
+              <img src="img/carousel-1.jpg" width="350" height="430" alt="ANTON COX">
+              <div class="slide-pack">
+                <h4>John Nelson</h4>
+                <p>(Attorney)</p>
+                <span>15 YEARS
+                OF PRACTICE</span>
+                <div class="slide-pack-icons">
+                  <a class="slide-pack-icon pack-icon-in"href=""></a>
+                  <a class="slide-pack-icon pack-icon-post"href=""></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="result-slide">
-            <img src="img/carousel-2.jpg" width="350" height="430" alt="ANTON COX">
-            <div class="slide-pack">
-              <h4>ANTON COX</h4>
-              <p>(Attorney)</p>
-              <p><span>15 YEARS
-              OF PRACTICE</span></p>
-              <a class="slide-pack-icon pack-icon-in"href=""></a>
-              <a class="slide-pack-icon pack-icon-post"href=""></a>
+            <div class="result-slide">
+              <img src="img/carousel-2.jpg" width="350" height="430" alt="ANTON COX">
+              <div class="slide-pack">
+                <h4>John Nelson</h4>
+                <p>(Attorney)</p>
+                <span>15 YEARS
+                OF PRACTICE</span>
+                <div class="slide-pack-icons">
+                  <a class="slide-pack-icon pack-icon-in"href=""></a>
+                  <a class="slide-pack-icon pack-icon-post"href=""></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="result-slide">
-            <img src="img/carousel-3.jpg" width="350" height="430" alt="ANTON COX">
-            <div class="slide-pack">
-              <h4>ANTON COX</h4>
-              <p>(Attorney)</p>
-              <p><span>15 YEARS
-              OF PRACTICE</span></p>
-              <a class="slide-pack-icon pack-icon-in"href=""></a>
-              <a class="slide-pack-icon pack-icon-post"href=""></a>
+            <div class="result-slide">
+              <img src="img/carousel-3.jpg" width="350" height="430" alt="ANTON COX">
+              <div class="slide-pack">
+                <h4>John Nelson</h4>
+                <p>(Attorney)</p>
+                <span>15 YEARS
+                OF PRACTICE</span>
+                <div class="slide-pack-icons">
+                  <a class="slide-pack-icon pack-icon-in"href=""></a>
+                  <a class="slide-pack-icon pack-icon-post"href=""></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="result-slide">
-            <img src="img/carousel-4.jpg" width="350" height="430" alt="ANTON COX">
-            <div class="slide-pack">
-              <h4>ANTON COX</h4>
-              <p>(Attorney)</p>
-              <p><span>15 YEARS
-              OF PRACTICE</span></p>
-              <a class="slide-pack-icon pack-icon-in"href=""></a>
-              <a class="slide-pack-icon pack-icon-post"href=""></a>
+            <div class="result-slide">
+              <img src="img/carousel-4.jpg" width="350" height="430" alt="ANTON COX">
+              <div class="slide-pack">
+                <h4>John Nelson</h4>
+                <p>(Attorney)</p>
+                <span>15 YEARS
+                OF PRACTICE</span>
+                <div class="slide-pack-icons">
+                  <a class="slide-pack-icon pack-icon-in"href=""></a>
+                  <a class="slide-pack-icon pack-icon-post"href=""></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="result-slide">
-            <img src="img/carousel-5.jpg" width="350" height="430" alt="ANTON COX">
-            <div class="slide-pack">
-              <h4>ANTON COX</h4>
-              <p>(Attorney)</p>
-              <p><span>15 YEARS
-              OF PRACTICE</span></p>
-              <a class="slide-pack-icon pack-icon-in"href=""></a>
-              <a class="slide-pack-icon pack-icon-post"href=""></a>
+            <div class="result-slide">
+              <img src="img/carousel-5.jpg" width="350" height="430" alt="ANTON COX">
+              <div class="slide-pack">
+                <h4>John Nelson</h4>
+                <p>(Attorney)</p>
+                <span>15 YEARS
+                OF PRACTICE</span>
+                <div class="slide-pack-icons">
+                  <a class="slide-pack-icon pack-icon-in"href=""></a>
+                  <a class="slide-pack-icon pack-icon-post"href=""></a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="result-slide">
-            <img src="img/carousel-6.jpg" width="350" height="430" alt="ANTON COX">
-            <div class="slide-pack">
-              <h4>ANTON COX</h4>
-              <p>(Attorney)</p>
-              <p><span>15 YEARS
-              OF PRACTICE</span></p>
-              <a class="slide-pack-icon pack-icon-in"href=""></a>
-              <a class="slide-pack-icon pack-icon-post"href=""></a>
+            <div class="result-slide">
+              <img src="img/carousel-6.jpg" width="350" height="430" alt="ANTON COX">
+              <div class="slide-pack">
+                <h4>John Nelson</h4>
+                <p>(Attorney)</p>
+                <span>15 YEARS
+                OF PRACTICE</span>
+                <div class="slide-pack-icons">
+                  <a class="slide-pack-icon pack-icon-in"href=""></a>
+                  <a class="slide-pack-icon pack-icon-post"href=""></a>
+                </div>
+              </div>
             </div>
           </div>
           <span class="result-slide-arrow result-prev">prev</span>
@@ -185,26 +207,31 @@
         </div>
       </section>
       <section class="main-contacts">
-        <div class="contacts-greeting">
+        <div class="contacts-greeting clearfix">
           <div class="contats-greeting-left">
-            <h3>STUDENT SERVICES</h3>
-            <h4>ACADEMIC SUPPORT</h4>
-            <p>CALL US TOLL FREE:</p>
-            <a href="#">(800) 123 1334</a>
-            <p><span>7 DAYS A WEEK FROM 8:00 AM TO 2:00 AM</span></p>
+            <div class="greeting-left-centering">
+              <h3>STUDENT <br>SERVICES</h3>
+              <h4>ACADEMIC SUPPORT</h4>
+              <p>CALL US TOLL FREE:</p>
+              <a href="#">(800) 123 1334</a>
+              <p><span>7 DAYS A WEEK <br>FROM 8:00 AM TO 2:00 AM</span></p>
+            </div>
           </div>
           <div class="contats-greeting-right">
-            <h3>OFFICES</h3>
-            <h4>& SERVICES</h4>
-            <h4>FACULTY, STAFF, AND RETIREES</h4>
-            <p>read more <span>...</span></p>
+            <div class="greeting-right-centering">
+              <h3>OFFICES</h3>
+              <h4>& SERVICES</h4>
+              <h5>FACULTY, STAFF,<br>
+              AND RETIREES</h5>
+              <a href="#">read more <span>...</span></a>
+            </div>
           </div>
         </div>
-        <div class="contacts-social">
+        <div class="contacts-social container">
           <div class="contact-social social-newletter">
             <h4>newsletter:</h4>
             <p>enter your email here to receive our news:</p>
-            <form class="form-newsletter" action="index.html" method="post">
+            <form class="form-newsletter clearfix" action="index.html" method="post">
               <input type="text" name="mail" placeholder="your mail">
               <input class="btn-submit-subscribe" type="submit" name="subscribe" value="subscribe">
             </form>
@@ -240,7 +267,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <figure class="footer-logo">
+      <figure class="footer-logo container">
         <img src="img/flogo.png" alt="footer-logo">
         <div class="footer-copyright">
           <p>&copy; 2017 | privacy policy</p>
