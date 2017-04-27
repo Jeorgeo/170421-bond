@@ -694,6 +694,224 @@ h6 {
   background-color: #3948ab;
 }
 
+/*  About.html   */
+
+.about-article {
+  margin-bottom: 5%;
+}
+
+.about-article h2,
+.about-article h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+.about-article h3 {
+  font-size: 1.2em;
+}
+
+.about-article-img,
+.about-article-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin: 0;
+}
+
+.about-article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-article a {
+  text-decoration: none;
+  color: #039be6;
+}
+
+.about-article a:hover {
+  color: #7f7f7f;
+}
+
+.about-advantages {
+  padding: 5% 0;
+  color: #ffffff;
+  background-color: #7f7f7f;
+}
+
+.about-advantages h3,
+.about-reviews h3,
+.about-solutions h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.about-advantage {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.about-advantage span {
+  position: relative;
+  float:left;
+  width: 68px;
+  height: 68px;
+  margin-right: 1em;
+  margin-top: 0.7em;
+  font-size: 28px;
+  font-family: 'Changa One', cursive;
+  padding: 17px 22px;
+  font-weight: bold;
+  color: #7f7f7f;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.about-advantage span::after {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  left: 45px;
+  top: 10px;
+  transform: rotate(45deg);
+  color: #7f7f7f;
+  background-color: #ffffff;
+  content: "";
+}
+
+.about-advantage a {
+  text-decoration: none;
+  font-family: 'Changa One', cursive;
+  color: #ffffff;
+}
+
+.about-advantage a:hover {
+  color: #039be6;
+}
+
+.about-reviews {
+  padding: 2em 0;
+  color: #ffffff;
+  background-color: #039be6;
+}
+
+.about-review {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.about-review:nth-child(3),
+.about-review:nth-child(4) {
+  margin-top: 2em;
+}
+
+.about-quetes {
+  float: left;
+  margin-right: 1em;
+  margin-top: 0.7em;
+}
+
+.about-client {
+  display: block;
+  color: #3948ab;
+}
+
+.about-review a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.about-review a:hover {
+  color: #3948ab;
+}
+
+.about-solutions {
+  text-align: center;
+}
+
+.about-solutions figure {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+  margin: 0;
+}
+
+.about-solutions img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*  Contacts  */
+
+.contacts-map h2,
+.contacts-relations h3,
+.contacts-form h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contacts-map-box {
+  display: block;
+  width: 100%;
+  height: 10em;
+  background: #e0e0e0 url("../img/map.png") no-repeat 50% 0;
+  background-size: cover;
+}
+
+.contact-relations {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.4em;
+  border: 1px solid #7f7f7f;
+  box-sizing: border-box;
+}
+
+.contacts-form textarea {
+  height: 5em;
+}
+
+.contacts-form-box input:focus,
+.contacts-form-box textarea:focus {
+  border: 1px solid #039be6;
+  outline: 1px solid #039be6;
+  box-shadow: 0 0 3px 2px #039be6;
+}
+
+.contacts-form-box button {
+  border: none;
+  background-color: inherit;
+  font-family: 'Changa One', cursive;
+  color: #039be6;
+}
+
+.contacts-form-box button:hover {
+  cursor: pointer;
+  color: #7f7f7f;
+}
+
+.contacts-form-box button:active {
+  border: none;
+  outline: none;
+  color: #039be6;
+}
+
+
 /*  For mobile(landscape)   */
 
 @media screen and (min-width: 605px) {
@@ -714,10 +932,11 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .main-header {
-    min-height: 140px;
+    min-height: 170px;
   }
 
   .header-logo {
+    margin-top: 2%;
     width: 50%;
   }
 
@@ -726,6 +945,7 @@ h6 {
     top: 0;
     right: 0;
     width: 50%;
+    padding-top: 4%;
   }
 
   .header-menu-toggle {
@@ -757,11 +977,45 @@ h6 {
   .result-slider {
     max-width: 640px;
   }
+
+
+  /*   About    */
+
+
+  .about-solutions figure {
+    margin: 0 20px 0 0;
+  }
+
+  .about-solutions figure:last-child {
+    margin-left: 0;
+  }
+
+  /*  contacts: ;*/
+
+  .contacts-form input,
+  .contact-relations {
+    width: 31.5%;
+
+  }
+
+  .contacts-form .contacts-form-email,
+  .contact-relations-phone {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .contacts-form textarea {
+    height: 10em;
+  }
 }
 
 /*   Third - For Tablet 1024px   */
 
 @media screen and (min-width: 1024px) {
+  .main-header {
+    padding-top: 2%;
+  }
+
   .header-overhead {
     text-align: left;
     width: 54.5%;
@@ -837,6 +1091,7 @@ h6 {
     margin: 0;
     padding: 0;
   }
+
   .production-services {
     display: inline-block;
     vertical-align: top;
@@ -844,6 +1099,7 @@ h6 {
     margin: 0;
     padding: 0;
   }
+
   .production-service {
     width: 50%;
     height: 270px;
@@ -902,7 +1158,44 @@ h6 {
     min-height: 200px;
   }
 
+  /* About */
+
+  .about-article {
+    margin-top: 4em;
+  }
+
+  .about-article-img {
+    width: 370px;
+  }
+
+  .about-article-content {
+    float: right;
+    width: 55%;
+  }
+
+  .about-advantage,
+  .about-review {
+    width: 31%;
+    margin-right: 3%;
+  }
+
+  .about-reviews .about-review {
+    margin-top: 0;
+  }
+
+  .about-advantage:last-child,
+  .about-review:last-child {
+    margin-right: 0;
+  }
+
+  /* Contacts */
+
+  .contacts-map {
+    margin-top: 4em;
+  }
 }
+
+
 
 /*  Fourth - for PC 1360px  */
 
@@ -911,8 +1204,9 @@ h6 {
       width: 95%;
       max-width: 1292px;
     }
-    .main-header {
-      padding-top: 2%;
+
+    .header-logo {
+      width: 45%;
     }
 
     .header-overhead {
@@ -975,5 +1269,11 @@ h6 {
     .main-result {
       margin-top: 5em;
       margin-bottom: 2em;
+    }
+
+    /* About  */
+
+    .about-article-content {
+      width: 57%;
     }
 }
