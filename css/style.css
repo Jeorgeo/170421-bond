@@ -387,6 +387,18 @@ h6 {
   margin: 0.4em;
 }
 
+.result-slide-arrow {
+  float: right;
+  border: none;
+  color: #039be6;
+  background-color: inherit;
+}
+
+.result-slide-arrow:hover {
+  cursor: pointer;
+  color: #3948ab;
+}
+
 .slide-pack {
   display: none;
   position: absolute;
@@ -658,6 +670,7 @@ h6 {
   bottom: 50px;
   right: 30px;
   border: 1px solid #7f7f7f;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .arrow-up span {
