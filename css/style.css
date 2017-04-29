@@ -4,7 +4,8 @@ body {
   padding: 0;
 }
 
-/*  first - for mobile  */
+/*--------------------------first - for mobile--------------------------------*/
+/*-----------------------------index.html-------------------------------------*/
 
 body {
   width: 100%;
@@ -270,35 +271,91 @@ h6 {
   color: #ffffff;
 }
 
+@keyframes show-red {
+  from { background-color: rgba(235, 88, 45, 0.7); }
+  to   { background-color: #eb582d; }
+}
+
+@keyframes hidden-red {
+  from { background-color: #eb582d; }
+  to   { background-color: rgba(235, 88, 45, 0.7); }
+}
+
 .service-red {
+  animation-name: show-red;
+  animation-duration: 0.5s;
   background-color: #eb582d;
 }
 
 .service-red:hover {
+  animation-name: hidden-red;
+  animation-duration: 0.8s;
   background-color: rgba(235, 88, 45, 0.7);
 }
 
+@keyframes show-blue {
+  from { background-color: rgba(108, 66, 184, 0.7); }
+  to   { background-color: #6c42b8; }
+}
+
+@keyframes hidden-blue {
+  from { background-color: #6c42b8; }
+  to   { background-color: rgba(108, 66, 184, 0.7); }
+}
+
 .service-blue {
+  animation-name: show-blue;
+  animation-duration: 0.5s;
   background-color: #6c42b8;
 }
 
 .service-blue:hover {
+  animation-name: hidden-blue;
+  animation-duration: 0.8s;
   background-color: rgba(108, 66, 184, 0.7);
 }
 
+@keyframes show-crimson {
+  from { background-color: rgba(205, 26, 95, 0.7); }
+  to   { background-color: #d71a5f; }
+}
+
+@keyframes hidden-crimson {
+  from { background-color: #d71a5f; }
+  to   { background-color: rgba(205, 26, 95, 0.7); }
+}
+
 .service-crimson {
+  animation-name: show-crimson;
+  animation-duration: 0.5s;
   background-color: #d71a5f;
 }
 
 .service-crimson:hover {
+  animation-name: hidden-crimson;
+  animation-duration: 0.8s;
   background-color: rgba(205, 26, 95, 0.7);
 }
 
+@keyframes show-green {
+  from { background-color: rgba(108, 188, 113, 0.7); }
+  to   { background-color: #6cbc71; }
+}
+
+@keyframes hidden-green {
+  from { background-color: #6cbc71; }
+  to   { background-color: rgba(108, 188, 113, 0.7); }
+}
+
 .service-green {
+  animation-name: show-green;
+  animation-duration: 0.5s;
   background-color: #6cbc71;
 }
 
 .service-green:hover {
+  animation-name: hidden-green;
+  animation-duration: 0.8s;
   background-color: rgba(108, 188, 113, 0.7);
 }
 
@@ -399,8 +456,18 @@ h6 {
   color: #3948ab;
 }
 
+@keyframes hidden-slide {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes show-slide {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
 .slide-pack {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -410,6 +477,9 @@ h6 {
   text-align: center;
   box-sizing: border-box;
   background-color: #d6e4d7;
+  animation-name: show-slide;
+  animation-duration: 0.7s;
+  opacity: 0;
 }
 
 .slide-pack h4,
@@ -469,7 +539,9 @@ h6 {
 }
 
 .result-slide:hover .slide-pack {
-  display:block;
+  animation-name: hidden-slide;
+  animation-duration: 0.6s;
+  opacity: 1;
 }
 
 .contats-greeting-left {
@@ -707,7 +779,8 @@ h6 {
   background-color: #3948ab;
 }
 
-/*  About.html   */
+/*--------------------------first - for mobile--------------------------------*/
+/*--------------------------------About.html----------------------------------*/
 
 .about-article {
   margin-bottom: 5%;
@@ -864,7 +937,8 @@ h6 {
   height: auto;
 }
 
-/*  Contacts  */
+/*--------------------------first - for mobile--------------------------------*/
+/*--------------------------------Contacts.html-------------------------------*/
 
 .contacts-map h2,
 .contacts-relations h3,
@@ -884,6 +958,10 @@ h6 {
   display: inline-block;
   vertical-align: top;
   width: 100%;
+}
+
+.contact-relations .fa {
+  margin-right: 1em;
 }
 
 .contacts-form input,
@@ -925,7 +1003,8 @@ h6 {
 }
 
 
-/*  For mobile(landscape)   */
+/*---------------------------For mobile(landscape)----------------------------*/
+/*--------------------------------index.html----------------------------------*/
 
 @media screen and (min-width: 605px) {
   .production-service {
@@ -941,11 +1020,12 @@ h6 {
   }
 }
 
-/*  Second - For Tablet 768px   */
+/*----------------------Second - For Tablet 768px-----------------------------*/
+/*------------------------------index.html------------------------------------*/
 
 @media screen and (min-width: 768px) {
   .main-header {
-    min-height: 170px;
+    min-height: 163px;
   }
 
   .header-logo {
@@ -977,8 +1057,6 @@ h6 {
     width: 90%;
   }
 
-/* */
-
   .production-service {
     height: 350px;
   }
@@ -992,7 +1070,8 @@ h6 {
   }
 
 
-  /*   About    */
+/*----------------------Second - For Tablet 768px-----------------------------*/
+/*------------------------------About.html------------------------------------*/
 
 
   .about-solutions figure {
@@ -1003,7 +1082,10 @@ h6 {
     margin-left: 0;
   }
 
-  /*  contacts: ;*/
+
+/*----------------------Second - For Tablet 768px-----------------------------*/
+/*-----------------------------contacts.html----------------------------------*/
+
 
   .contacts-form input,
   .contact-relations {
@@ -1022,11 +1104,26 @@ h6 {
   }
 }
 
-/*   Third - For Tablet 1024px   */
+
+/*-------------------------Third - For Tablet 960px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
+
+@media screen and (min-width: 960px) {
+  .main-header {
+    min-height: 171px;
+  }
+}
+
+
+/*-------------------------Third - For Tablet 1024px--------------------------*/
+/*-------------------------------index.html-----------------------------------*/
+
 
 @media screen and (min-width: 1024px) {
   .main-header {
     padding-top: 2%;
+    min-height: 163px;
   }
 
   .header-overhead {
@@ -1171,7 +1268,10 @@ h6 {
     min-height: 200px;
   }
 
-  /* About */
+
+/*-------------------------Third - For Tablet 1024px--------------------------*/
+/*--------------------------------About.html----------------------------------*/
+
 
   .about-article {
     margin-top: 4em;
@@ -1201,7 +1301,10 @@ h6 {
     margin-right: 0;
   }
 
-  /* Contacts */
+
+/*-------------------------Third - For Tablet 1024px--------------------------*/
+/*----------------------------------Contacts.html-----------------------------*/
+
 
   .contacts-map {
     margin-top: 4em;
@@ -1209,8 +1312,8 @@ h6 {
 }
 
 
-
-/*  Fourth - for PC 1360px  */
+/*--------------------------Fourth - for PC 1360px----------------------------*/
+/*----------------------------------index.html--------------------------------*/
 
   @media screen and (min-width: 1360px) {
     .container {
@@ -1265,9 +1368,19 @@ h6 {
     .main-footer .footer-map {
       min-height: 310px;
     }
+
+
+/*--------------------------Fourth - for PC 1360px----------------------------*/
+/*----------------------------------about.html--------------------------------*/
+
+
+    .about-reviews {
+      padding-bottom: 3em;
+    }
 }
 
-/*  Fift - for HD 1920px  */
+/*------------------------------Fift - for HD 1920px--------------------------*/
+/*----------------------------------index.html--------------------------------*/
 
   @media screen and (min-width: 1920px) {
     .production-service,
@@ -1284,7 +1397,10 @@ h6 {
       margin-bottom: 2em;
     }
 
-    /* About  */
+
+/*------------------------------Fift - for HD 1920px--------------------------*/
+/*--------------------------------About.html----------------------------------*/
+
 
     .about-article-content {
       width: 57%;
